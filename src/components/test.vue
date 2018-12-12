@@ -15,6 +15,7 @@
         <lable>First Name: </lable><input type="text" v-model="user.first_name">
         <lable>Last Name: </lable><input type="text" v-model="user.last_name">
         <h3>{{fullName}}</h3>
+        <h2>{{msg}}</h2>
        
     </div>
 </template>
@@ -23,6 +24,12 @@
 <script>
     export default {
         name: 'test',
+        props: {
+            msg:{
+                type: String,
+                default:'Foobar'
+            }
+        },
         data() {
             return {
                 

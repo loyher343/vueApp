@@ -1,12 +1,14 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <test msg="hello"></test>
     <router-view/>
   </div>
 </template>
 
 <script>
 import Test from './components/test'
+import users from './componets/users'
 export default {
   name: 'App',
  
